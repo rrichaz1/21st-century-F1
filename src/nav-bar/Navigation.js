@@ -7,7 +7,7 @@ const Navigation = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (       
             <nav>
-              <img src={logo} width="50" height="50" className = "px-3"alt="logo"/>
+              <img src={logo} width="70" height="50" className="px-2"alt="logo"/>
               <h4>21st Century F1</h4>
               {/* <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
               </div> */}
