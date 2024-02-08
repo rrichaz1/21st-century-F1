@@ -40,9 +40,9 @@ jobs:
           node-version: "20.9.0"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: npm install
       - name: Build project
-        run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
+        run:  npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
