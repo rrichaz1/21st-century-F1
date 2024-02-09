@@ -1,10 +1,64 @@
-.active{
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .logo {
+    float: left;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-effect  {
+    color: #FF0000;
+  }
+  
+  .nav-effect:hover {
+    color: #FF0000;
+  }
+  
+  .nav-effect::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #FF0000;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  
+  .nav-effect:hover::before {
+    width: 90%;
+  }
+
+  nav {
+    display: flex;
+    background-color: #000000;
+    color: white;
+    padding-top: 10px;
+} 
+
+h4{
+    padding-right: 50px;
+}
+
+/* .active{
     background-color: #FF0000;
 }
 
 nav {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     background-color: #000000;
     color: white;
@@ -79,4 +133,4 @@ nav .menu {
     nav ul li a {
         margin: 0.2rem 0.5rem;
     } 
-}*/
+}*/ 
