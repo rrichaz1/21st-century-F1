@@ -1,4 +1,21 @@
-header::after {
+
+nav {
+  display: flex;
+  background-color: #000000;
+  color: white;
+  padding-top: 10px;
+} 
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+a{
+  color: white;
+}
+
+
+/* header::after {
     content: '';
     display: table;
     clear: both;
@@ -133,4 +150,4 @@ nav .menu {
     nav ul li a {
         margin: 0.2rem 0.5rem;
     } 
-}*/ 
+}*/  
