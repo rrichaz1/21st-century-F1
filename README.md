@@ -69,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # 21st-century-F1
+
+
+
+https://blog.logrocket.com/deploying-react-apps-github-pages/#:~:text=The%20simplicity%20of%20deploying%20a,your%20custom%20domain%20or%20subdomain.
