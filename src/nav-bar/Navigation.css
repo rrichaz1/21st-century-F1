@@ -1,4 +1,24 @@
-header::after {
+
+nav {
+    display: flex;
+    background-color: #000000;
+    color: white;
+    padding-top: 10px;
+} 
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+.navbar>.container{
+    justify-content: start;
+}
+
+/* header::after {
     content: '';
     display: table;
     clear: both;
@@ -50,7 +70,7 @@ header::after {
 
 h4{
     padding-right: 50px;
-}
+} */
 
 /* .active{
     background-color: #FF0000;
