@@ -1,9 +1,9 @@
-import Carousel from "./Carousel.js";
 import './Home.css';
+import Slideshow from './Slideshow';
 
 const Home = () => {
     return (
-        <Carousel />
+        <Slideshow/>
      );
 }
  
