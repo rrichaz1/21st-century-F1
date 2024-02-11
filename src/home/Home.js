@@ -1,9 +1,10 @@
 import './Home.css';
- import Slideshow from './Slideshow';
+import Main from './Main';
+
 
 const Home = () => {
     return (
-        <Slideshow />
+        <Main />
      );
 }
  

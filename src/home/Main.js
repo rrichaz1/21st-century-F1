@@ -18,7 +18,7 @@ const Slideshow = () => {
                     />
                     <Carousel.Caption>
                     <h1>Welcome to 21st Century F1</h1>
-                    <p>Home of the Internet Formula 1 Historians</p>
+                    <p>Home of the Internet's Formula 1 Historians</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carousel-item'>
@@ -40,13 +40,35 @@ const Slideshow = () => {
                     alt="Third slide"
                     />
                     <Carousel.Caption className="text-start">
-                    <h1>Experience Grand Prix Results</h1>
-                    <p>See the ones who conquered each circuit year-by-year</p>
+                    <h1>See Grand Prix Results</h1>
+                    <p>Read the names of those who conquered each circuit year-by-year</p>
                     <NavLink to="/results" className={"btn btn-lg btn-danger"} role={"button"}>Results</NavLink>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-        </Container>
+
+            <div className="row">
+                <div className="col-lg-8">
+                    <h2 className="pb-4 mb-4 fst-italic text-start">My Story</h2>
+                    <p className="text-start">
+                        For the last decade, I have loved watching Formula 1. I have seen Sebastian Vettel win his fourth Championship, 
+                        Lewis Hamilton become a seven time champion of the world, and the young upstart named Max Verstappen take his place
+                        with legends of the sport. I have been fascinated with the history of the sport and how it has evolved over the years
+                    </p>
+                    <p className="text-start">
+                        As I grew older, I also became very interested in engineering and computer science. With engineering being such an integral part for the development of
+                        the racecars, my love for the sport only amplified. So to combine my interests, I have created this site. I hope you enjoy using it!
+                    </p>
+                </div>
+
+                <aside className="col-lg-4">
+                    <div className="p-4 mb-3 mt-2 bg-light rounded">
+                        <p className="mb-0 fst-italic">There are only three sports: bullfighting, <b>motor racing</b>, and mountaineering; all the rest are merely games ~
+                            Ernest Hemingway</p>
+                    </div>
+                </aside>
+            </div>
+        </Container> 
     );
 }
  
