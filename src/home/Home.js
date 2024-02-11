@@ -3,7 +3,7 @@ import Slideshow from './Slideshow';
 
 const Home = () => {
     return (
-        <Slideshow/>
+        <div>Test page</div>
      );
 }
  
