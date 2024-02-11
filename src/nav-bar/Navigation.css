@@ -13,7 +13,7 @@ nav {
 a{
   color: white;
 }
-  /* nav li {
+   nav li {
     display: inline-block;
     position: relative;
   }
@@ -21,12 +21,11 @@ a{
   .nav-effect  {
     color: #FF0000;
   }
-  */
+  
   .nav-effect:hover {
     color: #FF0000;
   }
-  /*
-  .nav-effect::before {
+    .nav-effect::before {
     content: '';
     display: block;
     height: 5px;
@@ -48,14 +47,8 @@ a{
     padding-top: 10px;
 } 
 
-h4{
-    padding-right: 50px;
-} */
 
-/* .active{
-    background-color: #FF0000;
-}
-
+/*
 nav {
     display: flex;
     justify-content: space-between;
