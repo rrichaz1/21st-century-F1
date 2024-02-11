@@ -1,9 +1,9 @@
 import './Home.css';
-import Slideshow from './Slideshow';
+ import Slideshow from './Slideshow';
 
 const Home = () => {
     return (
-        <Slideshow/>
+        <Slideshow />
      );
 }
  

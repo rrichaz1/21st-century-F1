@@ -1,9 +1,9 @@
 import './Navigation.css';
 
-// import { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from './logo.png';
 import Container from 'react-bootstrap/Container';
-import { Navbar, Nav, NavItem, NavLink } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
 
 const Navigation = () => {
@@ -16,16 +16,16 @@ const Navigation = () => {
               </Navbar.Brand>
               <Navbar.Toggle/>
               <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                  <NavItem>        
-                    <NavLink href="/" className={"text-white nav-effect"}>Home</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="/standings" className={"text-white nav-effect"}>Standings</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="/results" className={"text-white nav-effect"}>GP Results</NavLink>
-                  </NavItem>
+                <Nav className="mr-auto" defaultActiveKey="/home" as="ul">
+                  <Nav.Item as="li" >        
+                    <Nav.Link as={Link} to="/" className={"text-white nav-effect"}>Home</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item as="li">
+                    <Nav.Link as={Link} eventKey="link-1" to="/standings" className={"text-white nav-effect"}>Standings</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item as="li">
+                    <Nav.Link as={Link} eventKey="link-2" to="/results" className={"text-white nav-effect"}>GP Results</Nav.Link>
+                  </Nav.Item>
                 </Nav>
               </Navbar.Collapse>
             </Container>

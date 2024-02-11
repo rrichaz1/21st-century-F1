@@ -4,6 +4,7 @@ import Home from './home/Home';
 import Standings from './standings/Standings';
 import Results from './results/Results';
 import { Routes, Route } from 'react-router-dom';
+// import { CarouselItem } from 'react-bootstrap';
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
       <Routes>
         <Route path="/standings" element={<Standings />} />
         <Route path="/results" element={<Results />} /> 
-        <Route path="/" element={<Home />} />
+        <Route path="/" exact element={<Home />} />
       </Routes>
     </div>
   );
 }
+
 
 export default App;
