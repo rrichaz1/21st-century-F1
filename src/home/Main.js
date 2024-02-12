@@ -6,7 +6,7 @@ import carousel3 from './carousel3.jpg';
 import Container from 'react-bootstrap/Container';
 import { NavLink } from 'react-router-dom';
 
-const Slideshow = () => {
+const Main = () => {
     return ( 
         <Container>
             <Carousel className="slide mb-5" >
@@ -72,5 +72,5 @@ const Slideshow = () => {
     );
 }
  
-export default Slideshow;
+export default Main;
 
