@@ -1,6 +1,9 @@
+import './Standings.css';
+import Main from './index.js';
+
 const Standings = () => {
     return ( 
-        <div>Hello world?</div>
+        <Main />
      );
 }
  

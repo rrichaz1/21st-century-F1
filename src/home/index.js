@@ -4,6 +4,7 @@ import carousel1 from './carousel1.jpg';
 import carousel2 from './carousel2.jpg';
 import carousel3 from './carousel3.jpg';
 import Container from 'react-bootstrap/Container';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { NavLink } from 'react-router-dom';
 
 const Main = () => {
@@ -46,6 +47,10 @@ const Main = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+
+            <Breadcrumb className="custom-background">
+                <Breadcrumb.Item active>Home</Breadcrumb.Item>
+            </Breadcrumb>
 
             <div className="row">
                 <div className="col-lg-8">

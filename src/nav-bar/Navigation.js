@@ -10,7 +10,7 @@ const Navigation = () => {
     return (    
           <Navbar expand="lg" bg="dark" data-bs-theme="dark" variant="dark" fixed="top">
             <Container>
-              <Navbar.Brand href="/">
+              <Navbar.Brand>
               <Image src={logo} rounded width="30" height="30" className="d-inline-block align-top"/>
               21st Century F1
               </Navbar.Brand>

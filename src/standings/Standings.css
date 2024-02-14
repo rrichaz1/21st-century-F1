@@ -1,0 +1,9 @@
+.custom-background{
+    background-color: #FFFFFF;
+  }
+
+.jumbotron-standings {
+    background: url('./standings.jpg') no-repeat fixed;
+    background-size: cover;
+    height: 30rem;
+}
