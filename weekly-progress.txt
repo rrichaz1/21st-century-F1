@@ -13,3 +13,7 @@ Week 2:
 Week 3:
   1. Built the "carousel" component of the main page - this is the slideshow with pictures that points to each page. I have also added the text box that has "my story" and quote.
   2. Start building the results page with the drop down menu. I will have to learn how to connect to the API, which will take some time. 
+
+Week 4: 
+  1. Finished making the standings page. This is complete with the jumbotron, text, etc. 
+  2. Will make the results page next. Within the next 2 weeks, I will figure out how to connect with the API (haven't made progress on this yet). This will make it easier to create the dropdown which hasn't been made yet. 
