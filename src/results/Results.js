@@ -1,6 +1,9 @@
+import Main from './index.js';
+import './Results.css';
+
 const Results = () => {
     return ( 
-        <div>Hello world!</div>
+       <Main />
      );
 }
  

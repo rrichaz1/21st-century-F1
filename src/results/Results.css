@@ -1,0 +1,9 @@
+.custom-background{
+    background-color: #FFFFFF;
+  }
+
+.jumbotron-results {
+    background: url('./results.jpg') no-repeat fixed;
+    background-size: cover;
+    height: 30rem;
+}

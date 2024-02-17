@@ -7,8 +7,8 @@ import picture from './standings2.jpg';
 const Main = () => {
     return (
         <div>
-            <div className="container-fluid jumbotron jumbotron-standings py-5">
-                <Container>
+            <div className="jumbotron jumbotron-standings py-5">
+                <Container className="container-fluid">
                     <h1 className="display-4 fw-bold text-white text-start">Standings</h1>
                 </Container>
             </div>
