@@ -1,8 +1,8 @@
 import "./Standings.css";
-import Image from "react-bootstrap/Image";
+// import Image from "react-bootstrap/Image";
 
 const DriversSearchRow = ({driverStanding}) => {
-    const icon = `/21st-century-F1/public/icons/${driverStanding.Driver.nationality}.jpg`;
+    // const icon = `/21st-century-F1/public/icons/${driverStanding.Driver.nationality}.jpg`;
 
     return ( 
         <tr>
