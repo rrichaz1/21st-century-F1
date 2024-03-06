@@ -8,7 +8,8 @@ const DriversSearchRow = ({driverStanding}) => {
         <tr>
             <td>{driverStanding.position}</td>
             <td>
-                <Image src={icon} width="35" height="35"/>
+                {/* <Image src={icon} width="35" height="35"/> */}
+                {driverStanding.Driver.nationality}
             </td>
             <td>{driverStanding.Driver.givenName + " " + driverStanding.Driver.familyName}</td>
             <td>{driverStanding.Constructors[0].name}</td>
