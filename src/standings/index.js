@@ -3,8 +3,19 @@ import Container from 'react-bootstrap/Container';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Image from 'react-bootstrap/Image';
 import picture from './standings2.jpg';
+import { Form } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+    const navigate = useNavigate();
+    const year = (new Date()).getFullYear();
+    const years= Array.from(new Array(year-2000+1), (val,index) => 2000 + index);
+
+    const handleSelectChange = (e) => {
+        const selectedYear =e.target.value;    
+        navigate(`/drivers-standings/${selectedYear}`);  
+    };
+
     return (
         <div>
             <div className="jumbotron jumbotron-standings py-5">
@@ -28,12 +39,32 @@ const Main = () => {
                             </p>
                         </div>
 
+                        
                         <aside className="col-lg-4">
-                            <div className="p-4 mb-3 mt-2 bg-light rounded">
-                                <p className="mb-0 fst-italic ">I’ve always believed that you should <b>never, ever give up</b> and you should always <b>keep fighting</b> even when there’s only a slightest chance ~
-                                    Michael Schumacher</p>
+                            <div>
+                            <Form>
+                                <Form.Label className="formLabel fw-bold">
+                                    Select Year
+                                </Form.Label>
+
+                                <Form.Select  onChange={handleSelectChange}>
+                                {
+                                        years.map((year, index) => {
+                                            return <option key={`year${index}`} value={year}>{year}</option>
+                                        })
+                                }
+                                </Form.Select>
+                             
+                            </Form>
                             </div>
+                            
+                                <div className="p-4 mb-3 mt-2 bg-light rounded">
+                                    <p className="mb-0 fst-italic ">I’ve always believed that you should <b>never, ever give up</b> and you should always <b>keep fighting</b> even when there’s only a slightest chance ~
+                                    Michael Schumacher</p>
+                                </div>
+                           
                         </aside>
+                        
                     </div>
                     <div>
                         <Image src={picture} className="img-fluid rounded"/>
