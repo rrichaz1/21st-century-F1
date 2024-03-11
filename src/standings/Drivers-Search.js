@@ -3,7 +3,7 @@ import {  useState,useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import DriversSearchRow from  './Drivers-Search-Row';
 import Spinner from 'react-bootstrap/Spinner';
-import Button from 'react-bootstrap/Button';
+import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 
 const DriversSearchResults = () => {   
@@ -45,12 +45,10 @@ const DriversSearchResults = () => {
     return ( 
         <div>
             <Container>
-            <Button routerLink="/" className="btn-danger btn-block mb-4">
-                <i className="fas fa-arrow-alt-circle-left"></i> Back
-            </Button>
+                <NavLink to="/standings" className={"btn btn-block btn-danger"} role={"button"}> <i className="fas fa-arrow-alt-circle-left"></i> Back</NavLink>
             </Container>
             <div className="mt-2 table-responsive">
-                <h4>Results for {year}:</h4>
+                <h4>{year} Standings:</h4>
                 <table className="table table-hover">
                     <thead className="table-light">
                         <tr>
