@@ -4,20 +4,26 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Image from 'react-bootstrap/Image';
 import picture from './standings2.jpg';
 import { Form } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Main = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const year = (new Date()).getFullYear();
-    const years= Array.from(new Array(year-2000+1), (val,index) => 2000 + index);
+    const years= Array.from(new Array(year-2000+1), (_,index) => 2000 + index);
+    years.unshift("Select Year");
+    console.log(years);
 
     const handleSelectChange = (e) => {
         const selectedYear =e.target.value;    
-        navigate(`/drivers-standings/${selectedYear}`);  
+        console.log(e.target.id);
+        console.log(location.pathname);
+        
+        navigate(`/standings/driver-standings/${selectedYear}`);  
     };
 
     return (
-        <div>
+           <div>
             <div className="jumbotron jumbotron-standings py-5">
                 <Container className="container-fluid">
                     <h1 className="display-4 fw-bold text-white text-start">Standings</h1>
