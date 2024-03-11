@@ -11,3 +11,17 @@
 tr {
   cursor: pointer;
 }
+
+.credit{
+  text-align: center;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+a{
+  color: blue;
+}
+
+.btn-block{
+  width: 100%;
+}

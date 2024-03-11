@@ -3,18 +3,19 @@ import Container from 'react-bootstrap/Container';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Image from 'react-bootstrap/Image';
 import picture from './standings2.jpg';
-import { Form } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import DriverSelect from './Drivers-Select';
+
+
 
 const Main = () => {
-    const navigate = useNavigate();
-    const year = (new Date()).getFullYear();
-    const years= Array.from(new Array(year-2000+1), (val,index) => 2000 + index);
+    // const navigate = useNavigate();
+    // const year = (new Date()).getFullYear();
+    // const years= Array.from(new Array(year-2000+1), (val,index) => 2000 + index);
 
-    const handleSelectChange = (e) => {
-        const selectedYear =e.target.value;    
-        navigate(`/drivers-standings/${selectedYear}`);  
-    };
+    // const handleSelectChange = (e) => {
+    //     const selectedYear =e.target.value;    
+    //     navigate(`/drivers-standings/${selectedYear}`);  
+    // };
 
     return (
         <div>
@@ -41,7 +42,7 @@ const Main = () => {
 
                         
                         <aside className="col-lg-4">
-                            <div>
+                            {/* <div>
                             <Form>
                                 <Form.Label className="formLabel fw-bold">
                                     Select Year
@@ -56,7 +57,8 @@ const Main = () => {
                                 </Form.Select>
                              
                             </Form>
-                            </div>
+                            </div> */}
+                            <DriverSelect />
                             
                                 <div className="p-4 mb-3 mt-2 bg-light rounded">
                                     <p className="mb-0 fst-italic ">I’ve always believed that you should <b>never, ever give up</b> and you should always <b>keep fighting</b> even when there’s only a slightest chance ~
