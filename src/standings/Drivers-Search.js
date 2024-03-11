@@ -17,7 +17,7 @@ const DriversSearchResults = () => {
         
             const fetchDriversStandings = async () => {
             try{
-                const ergasturl=`http://ergast.com/api/f1/${year}/driverStandings.json`;  
+                const ergasturl=`https://ergast.com/api/f1/${year}/driverStandings.json`;  
                 const rsp = await fetch(ergasturl);
                 const standings = await rsp.json();
                 setDriversStandings(standings.MRData.StandingsTable.StandingsLists[0].DriverStandings);
