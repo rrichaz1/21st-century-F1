@@ -21,3 +21,7 @@ Week 4:
 Week 5:
   1. Finished with the two secondary pages. Learning how to call from an API
   2. Started on the API + React course, so I will continue that. Figure out how to make the routing work. 
+
+Week 6:
+  1. Learned how to call from API, created a loading effect while it loads, all driver standing pages work
+  2. Goals: Make the results page and work out how to make tabs on the standings page
