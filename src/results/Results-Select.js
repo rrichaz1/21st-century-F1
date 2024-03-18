@@ -1,7 +1,7 @@
 import { Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-const DriverSelect = () => {
+const ResultsSelect = () => {
 
     const navigate = useNavigate();
     const year = (new Date()).getFullYear();
@@ -10,7 +10,7 @@ const DriverSelect = () => {
 
     const handleSelectChange = (e) => {
         const selectedYear = e.target.value;    
-        navigate(`/drivers-standings/${selectedYear}`);
+        navigate(`/results/${selectedYear}`);
     }
 
     return ( 
@@ -33,4 +33,4 @@ const DriverSelect = () => {
      );
 }
  
-export default DriverSelect;
+export default ResultsSelect;

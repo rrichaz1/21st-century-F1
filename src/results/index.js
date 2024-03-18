@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Image from 'react-bootstrap/Image';
 import pic from './results2.jpg';
+import ResultSelect from './Results-Select';
 
 const Main = () => {
     return ( 
@@ -31,6 +32,8 @@ const Main = () => {
                         </div>
 
                         <aside className="col-lg-4">
+
+                        <ResultSelect />
                             <div className="p-4 mb-3 mt-2 bg-light rounded">
                                 <p className="mb-0 fst-italic ">I always try to get the best result out of it, I'm not there to just sit second or sit third.  
                                 <b> I'm a winner</b>, and I want to win every single race, and <b>I will always go for it</b> ~ Max Verstappen</p>
