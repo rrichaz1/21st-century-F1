@@ -22,7 +22,7 @@ const RoutesJSX = (
   <Route element={<Layout />}  >
     <Route exact path="/" element={<Home />} index />
     <Route path="standings">
-      <Route path="driver-standings/:year" loader={StandingsLoader} element={<DriversSearchResults/>} errorElement={<ErrorPage />}/>
+      <Route path=":year" loader={StandingsLoader} element={<DriversSearchResults/>} errorElement={<ErrorPage />}/>
       <Route index element={<Standings />} />
     </Route>
     <Route path="/results" element={<Results />} /> 

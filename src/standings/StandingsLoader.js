@@ -3,11 +3,24 @@ import axios from 'axios';
   //create a loader that takes year as a parameter and calls ergast api to get driver standings
 const StandingsLoader= async({params}) => {
     const { year } = params;
-    console.log("Year is " + year);
+    console.log("Executing Standings Loader Year is " + year);
     
-    let ergasturl = `http://ergast.com/api/f1/${year}/driverStandings.json`;
-      let response = await axios.get(ergasturl) ;
-      return response.data;
     
+    let ergastDriverUrl = `http://ergast.com/api/f1/${year}/driverStandings.json`;
+    let ergastConstructorUrl = `http://ergast.com/api/f1/${year}/constructorStandings.json`;
+    
+
+    console.log("Promise all call")
+    const standings = await Promise.all([
+      axios.get(ergastDriverUrl).then(response => response.data),
+      axios.get(ergastConstructorUrl).then(response => response.data)
+    ]);
+    console.log("Promise all call completed");
+    // console.log(standings[0]);
+
+    return standings;    
   }
+
+
+  
   export default StandingsLoader;

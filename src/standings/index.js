@@ -3,24 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Image from 'react-bootstrap/Image';
 import picture from './standings2.jpg';
-import { Form } from "react-bootstrap";
-import { useNavigate, useLocation } from "react-router-dom";
+import YearSelect from '../common/year-select';
 
 const Main = () => {
-    const navigate = useNavigate();
-    const location = useLocation();
-    const year = (new Date()).getFullYear();
-    const years= Array.from(new Array(year-2000+1), (_,index) => 2000 + index);
-    years.unshift("Select Year");
-    console.log(years);
 
-    const handleSelectChange = (e) => {
-        const selectedYear =e.target.value;    
-        console.log(e.target.id);
-        console.log(location.pathname);
-        
-        navigate(`/standings/driver-standings/${selectedYear}`);  
-    };
 
     return (
            <div>
@@ -48,20 +34,7 @@ const Main = () => {
                         
                         <aside className="col-lg-4">
                             <div>
-                            <Form>
-                                <Form.Label className="formLabel fw-bold">
-                                    Select Year
-                                </Form.Label>
-
-                                <Form.Select  onChange={handleSelectChange}>
-                                {
-                                        years.map((year, index) => {
-                                            return <option key={`year${index}`} value={year}>{year}</option>
-                                        })
-                                }
-                                </Form.Select>
-                             
-                            </Form>
+                                <YearSelect parentpage={"standings"}/>
                             </div>
                             
                                 <div className="p-4 mb-3 mt-2 bg-light rounded">
