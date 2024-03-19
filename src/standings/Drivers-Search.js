@@ -3,15 +3,18 @@ import { useParams, useLoaderData } from "react-router-dom";
 import DriversSearchRow from  './Drivers-Search-Row';
 
 
-const DriversSearchResults = () => {
+const DriversSearchResults1 = () => {
 
     const { year } = useParams();
-    console.log("Year is " + year);
+    console.log("DriverSearch js Year is " + year);
 
-    const standings = useLoaderData();
-    // console.log(standings);
-    const driversStandings = standings.MRData.StandingsTable.StandingsLists[0].DriverStandings;
-    // console.log(driversStandings);
+    //const {standings, standingsConstructor} = useLoaderData();
+    const standings = useLoaderData(); 
+    
+    //console.log(standingsConstructor);
+    const driversStandings = standings[0].MRData.StandingsTable.StandingsLists[0].DriverStandings;
+    console.log(driversStandings);
+  
 
     if (driversStandings.length === 0) {
         return(
@@ -23,8 +26,7 @@ const DriversSearchResults = () => {
     }
     return ( 
         
-            <div className="mt-2">
-                <h4>Results for {year}:</h4>
+            <>
                 <table className="table table-hover">
                     <thead className="table-light">
                         <tr>
@@ -43,11 +45,11 @@ const DriversSearchResults = () => {
     
                     </tbody>
                 </table>
-            </div>
+            </>
         );
     
-                }
+    }
  
-export default DriversSearchResults;
+export default DriversSearchResults1;
 
 

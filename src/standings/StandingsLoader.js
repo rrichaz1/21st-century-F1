@@ -14,6 +14,7 @@ const StandingsLoader= async({params}) => {
     const standings = await Promise.all([
       axios.get(ergastDriverUrl).then(response => response.data),
       axios.get(ergastConstructorUrl).then(response => response.data)
+
     ]);
     console.log("Promise all call completed");
     // console.log(standings[0]);
