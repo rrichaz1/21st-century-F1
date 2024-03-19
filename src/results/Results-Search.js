@@ -68,7 +68,7 @@ const ResultSearch = () => {
                 </table>
             </div>
             <div className="credit">
-                <span>Flag icons by</span> <a href="https://www.flaticon.com/authors/freepik">Freepik</a><span> from </span><a href="www.flaticon.com">www.flaticon.com</a>
+                <span>Flag icons by</span> <a href="https://www.flaticon.com/authors/freepik">Freepik</a><span> from </span><a href="https://www.flaticon.com">www.flaticon.com</a>
             </div>
         </div>
      );
