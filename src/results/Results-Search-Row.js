@@ -12,6 +12,7 @@ const ResultsSearchRow = ({result}) => {
             <td>
                 { <Image src={icon} width="35" height="35"/> }
             </td>
+            <td>{result.date}</td>
             <td>{result.Results[0].Driver.givenName + " " + result.Results[0].Driver.familyName}</td>
             <td>{result.Results[0].Constructor.name}</td>
         </tr>

@@ -54,6 +54,7 @@ const ResultSearch = () => {
                     <thead className="table-light">
                         <tr>
                             <th>Grand Prix</th>
+                            <th></th>
                             <th>Date</th>
                             <th>Winner</th>
                             <th>Constructor</th>
