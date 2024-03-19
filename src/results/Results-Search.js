@@ -53,8 +53,8 @@ const ResultSearch = () => {
                 <table className="table table-hover">
                     <thead className="table-light">
                         <tr>
-                            <th>Grand Prix</th>
                             <th></th>
+                            <th>Grand Prix</th>
                             <th>Date</th>
                             <th>Winner</th>
                             <th>Constructor</th>
