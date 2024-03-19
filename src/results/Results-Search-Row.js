@@ -8,10 +8,11 @@ const ResultsSearchRow = ({result}) => {
 
     return ( 
         <tr>
-            <td>{result.raceName}</td>
             <td>
                 { <Image src={icon} width="35" height="35"/> }
             </td>
+            <td>{result.raceName}</td>
+            <td>{result.date}</td>
             <td>{result.Results[0].Driver.givenName + " " + result.Results[0].Driver.familyName}</td>
             <td>{result.Results[0].Constructor.name}</td>
         </tr>
