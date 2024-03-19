@@ -25,3 +25,7 @@ Week 5:
 Week 6:
   1. Learned how to call from API, created a loading effect while it loads, all driver standing pages work
   2. Goals: Make the results page and work out how to make tabs on the standings page
+
+Week 7: 
+  1. Finished the results page, it pulls from API and everything works
+  2. Work on constructor standings, figure out how to get 2 API calls and make the tabs work. 
