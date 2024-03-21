@@ -13,7 +13,7 @@ import {
   RouterProvider,
   useNavigation
 } from "react-router-dom";
-import DriversSearchResults from './standings/Drivers-Search';
+import SeasonEndStandings from './standings/SeasonEndStanding';
 import ErrorPage from './error-page';
 
 
@@ -22,7 +22,7 @@ const RoutesJSX = (
   <Route element={<Layout />}  >
     <Route exact path="/" element={<Home />} index />
     <Route path="standings">
-      <Route path=":year" loader={StandingsLoader} element={<DriversSearchResults/>} errorElement={<ErrorPage />}/>
+      <Route path=":year" loader={StandingsLoader} element={<SeasonEndStandings/>} errorElement={<ErrorPage />}/>
       <Route index element={<Standings />} />
     </Route>
     <Route path="/results" element={<Results />} /> 
