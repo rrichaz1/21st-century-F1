@@ -3,14 +3,12 @@ import { useParams } from "react-router"
 import YearSelect from "../common/year-select";
 import { Tabs, Tab } from 'react-bootstrap';
 import DriversSearchResults from './Drivers-Search';
+import ConstructorsSearchResults from "./Constructors-Search";
 
 
 const SeasonEndStandings = () => {
 
     const { year } = useParams();
-    console.log("SeasonEndStandings js Year is " + year);
-
-  
 
     return ( 
         
@@ -31,7 +29,7 @@ const SeasonEndStandings = () => {
                     <DriversSearchResults />
                 </Tab>
                 <Tab eventKey="constructor" title="Constructor">
-                    Tab content for Profile
+                   <ConstructorsSearchResults />
                 </Tab>
                 </Tabs>
             </div>

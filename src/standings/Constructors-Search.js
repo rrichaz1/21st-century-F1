@@ -1,16 +1,15 @@
 import "./Standings.css";
 import { useLoaderData } from "react-router-dom";
-import DriversSearchRow from  './Drivers-Search-Row';
+import ConstructorsSearchRow from  './Constructor-Search-Row';
 
 
-const DriversSearchResults = () => {
-   
+const ConstructorsSearchResults = () => {
+
+
     const standings = useLoaderData(); 
-    
-    const driversStandings = standings[0].MRData.StandingsTable.StandingsLists[0].DriverStandings;
-   
+    const constructorStandings = standings[1].MRData.StandingsTable.StandingsLists[0].ConstructorStandings;
 
-    if (driversStandings.length === 0) {
+    if (constructorStandings.length === 0) {
         return(
             <div>
                 <p>No results found</p>
@@ -25,15 +24,15 @@ const DriversSearchResults = () => {
                         <tr>
                             <th>Position</th>
                             <th>Nationality</th>
-                            <th>Driver</th>
                             <th>Constructor</th>
                             <th>Points</th>
+                            <th>Wins</th>
                         </tr>
                     </thead>
                     <tbody>
                 
-                    {driversStandings.map((h) => (
-                        <DriversSearchRow key={h.position} driverStanding={h} />
+                    {constructorStandings.map((h) => (
+                        <ConstructorsSearchRow key={h.position} constructorStanding={h} />
                     ))} 
     
                     </tbody>
@@ -43,6 +42,6 @@ const DriversSearchResults = () => {
     
     }
  
-export default DriversSearchResults;
+export default ConstructorsSearchResults;
 
 

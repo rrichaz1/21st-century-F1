@@ -19,10 +19,21 @@ const ResultSearch = () => {
             try{
                 const ergasturl=`https://ergast.com/api/f1/${year}/results/1.json`;
                 const response = await fetch(ergasturl).then((response) => response.json());
-                console.log("Response "+response);
                 setResults(response.MRData.RaceTable.Races);
-                console.log(response.MRData.RaceTable.Races);
-                setLoading(false);
+              
+                // let ergastDriverUrl = `http://ergast.com/api/f1/${year}/driverStandings.json`;
+                // let ergastConstructorUrl = `http://ergast.com/api/f1/${year}/constructorStandings.json`;
+                
+            
+                // console.log("Promise all call")
+                // const standings = await Promise.all([
+                //   fetch(ergastDriverUrl).then(response => response.json()),
+                //   fetch(ergastConstructorUrl).then(response => response.json())
+            
+                // ]);
+                // console.log("Promise all call completed");
+                // console.log(standings[1]);
+                // setLoading(false);
             
                 }
                 catch (error) {
